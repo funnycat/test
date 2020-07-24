@@ -1,9 +1,26 @@
 jQuery(document).ready(function() {
 
-		$.get("https://valette.wm.r.appspot.com/api/product/blue-silk-tuxedo/preorder_settings/")
-		  .done(function( data ) {
-		    alert( "Data Loaded: " + data );
-		  });
+//		$.get("https://valette.wm.r.appspot.com/api/product/blue-silk-tuxedo/preorder_settings/")
+//		  .done(function( data ) {
+//		    alert( "Data Loaded: " + data );
+//		  });
+
+
+		  $.ajax({
+		    url: "https://valette.wm.r.appspot.com/api",
+//		    beforeSend: function(xhr) { 
+//		      xhr.setRequestHeader("Authorization", "Basic " + btoa("username:password")); 
+//		    },
+		    type: 'GET',
+		    dataType: 'json',
+		    contentType: 'application/json',
+		    success: function (data) {
+		      alert(JSON.stringify(data));
+		    },
+		    error: function(){
+		      alert("Cannot get data");
+		    }
+		});
 
 		const preorderProducts = ['blue-silk-tuxedo'];
 		const path = window.location.pathname;
