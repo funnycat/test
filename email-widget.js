@@ -1,5 +1,10 @@
 jQuery(document).ready(function() {
 
+		$.get("https://valette.wm.r.appspot.com/api/product/blue-silk-tuxedo/preorder_settings/")
+		  .done(function( data ) {
+		    alert( "Data Loaded: " + data );
+		  });
+
 		const preorderProducts = ['blue-silk-tuxedo'];
 		const path = window.location.pathname;
 	    // The pathname most likely looks like /collections/something/products/product-handle
