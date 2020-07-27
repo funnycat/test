@@ -5,8 +5,8 @@ jQuery(document).ready(function() {
 //		    alert( "Data Loaded: " + data );
 //		  });
 
-		const productHandle = 'blue-silk-tuxedo/preorder_settings/'
-		$.get('/apps/valette/', productHandle)
+		//const productHandle = 'blue-silk-tuxedo/preorder_settings/'
+		$.get('/apps/valette/blue-silk-tuxedo/preorder_settings/')
 		  .done(function( data ) {
 		    alert( "Data Loaded: " + data );
 		  });
