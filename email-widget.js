@@ -5,9 +5,15 @@ jQuery(document).ready(function() {
 //		    alert( "Data Loaded: " + data );
 //		  });
 
+		const productHandle = 'blue-silk-tuxedo/preorder_settings/'
+		$.get('/apps/valette/', productHandle)
+		  .done(function( data ) {
+		    alert( "Data Loaded: " + data );
+		  });
 
-		  $.ajax({
-		    url: "https://valette.wm.r.appspot.com/api",
+
+/*		  $.ajax({
+		    url: "https://valette.wm.r.appspot.com/api/product/blue-silk-tuxedo/preorder_settings/",
 //		    beforeSend: function(xhr) { 
 //		      xhr.setRequestHeader("Authorization", "Basic " + btoa("username:password")); 
 //		    },
@@ -20,7 +26,7 @@ jQuery(document).ready(function() {
 		    error: function(){
 		      alert("Cannot get data");
 		    }
-		});
+		});*/
 
 		const preorderProducts = ['blue-silk-tuxedo'];
 		const path = window.location.pathname;
