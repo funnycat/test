@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
 //		  });
 
 		//const productHandle = 'blue-silk-tuxedo/preorder_settings/'
-		$.get('/apps/valette/blue-silk-tuxedo/preorder_settings/')
+		$.get('/apps/valette/product/blue-silk-tuxedo/preorder_settings/')
 		  .done(function( data ) {
 		    alert( "Data Loaded: " + data );
 		  });
