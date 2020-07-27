@@ -1,6 +1,5 @@
 jQuery(document).ready(function() {
 
-
 		const preorderProducts = ['blue-silk-tuxedo'];
 		const path = window.location.pathname;
 	    // The pathname most likely looks like /collections/something/products/product-handle
