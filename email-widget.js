@@ -16,10 +16,12 @@ jQuery(document).ready(function() {
 		    console.log( "Data Loaded2: " + preorderDetails );
 		    console.log( "button text1: " + preorderDetails.buttonText );
 
-		    const parentDivClasses = 'product-form__item product-form__item--submit product-form__item--payment-button'
-		    const buttonStyle = 'display: block; width: 100%; font-size: 16px; font-family: font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.4; padding: 8px; margin-top: 0; margin-bottom: 10px; min-height: 44px; background-color: #000; color: #3a3a3a; border-color: #3a3a3a;'
+		    const parentDivClasses = 'product-form__item product-form__item--submit product-form__item--payment-button';
+		    const buttonStyle = 'display: block; width: 100%; font-size: 16px; font-family: font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.4; padding: 8px; margin-top: 10px; margin-bottom: 10px; min-height: 44px; background-color: #000; color: #3a3a3a; border-color: #3a3a3a;';
+		    const buttonClass = 'shopify-payment-button';
+		    const message = '<p>'+preorderDetails.messageText+'</p>'
 
-		    $('.product-form__item--payment-button').prepend('<div class="'+parentDivClasses+'"><button type="submit" class="shopify-payment-button" style="'+buttonStyle+'" data-testid="Checkout-button">'+preorderDetails.buttonText+'</button></div>')
+		    $('.product-form__item--payment-button').prepend('<div class="'+parentDivClasses+'"><button type="submit" class="" style="'+buttonStyle+'" data-testid="Checkout-button">'+preorderDetails.buttonText+'</button>'+message+'</div>')
 			
 			console.log('Button Added!');
 
