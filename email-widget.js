@@ -24,7 +24,7 @@ jQuery(document).ready(function() {
 			$('.product-form__controls-group--submit').prepend('<div class="'+parentDivClasses+'"><button type="submit" class="'+buttonClass+'" style="'+buttonStyle+'" data-testid="Checkout-button">'+preorderDetails.buttonText+'</button>'+message+'</div>')
 			
 
-			$(product-form__item--payment-button).empty();
+			$('.product-form__item--payment-button').empty();
 
 			console.log('Button Added!');
 
